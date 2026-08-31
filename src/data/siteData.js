@@ -1,13 +1,13 @@
 export const specialties = [
-  { id: 1, name: 'Cardiology', desc: 'Comprehensive heart care with advanced diagnostics and interventional procedures.', icon: 'heart', image: 'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=800&h=600&fit=crop' },
-  { id: 2, name: 'Neurology', desc: 'Expert neurological care for brain, spine, and nervous system conditions.', icon: 'brain', image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=600&fit=crop' },
-  { id: 3, name: 'Orthopedics', desc: 'Advanced musculoskeletal care and joint replacement solutions.', icon: 'bone', image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&h=600&fit=crop' },
-  { id: 4, name: 'Oncology', desc: 'Comprehensive cancer care with personalized treatment protocols.', icon: 'oncology', image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=600&fit=crop' },
-  { id: 5, name: "Pediatrics", desc: 'Specialized medical care for infants, children, and adolescents.', icon: 'child', image: 'https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=800&h=600&fit=crop' },
-  { id: 6, name: "Women's Health", desc: 'Complete women\'s healthcare from wellness to advanced gynecological care.', icon: 'women', image: 'https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&h=600&fit=crop' },
-  { id: 7, name: 'Gastroenterology', desc: 'Expert digestive health care and advanced endoscopic procedures.', icon: 'stomach', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop' },
-  { id: 8, name: 'Dermatology', desc: 'Advanced skin care and cosmetic dermatology treatments.', icon: 'skin', image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=600&fit=crop' },
-  { id: 9, name: 'Emergency Medicine', desc: 'Round-the-clock emergency care with rapid response teams.', icon: 'emergency', image: 'https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800&h=600&fit=crop' },
+  { id: 1, num: '01', name: 'Cardiology', desc: 'Comprehensive heart care with advanced diagnostics and interventional procedures.', icon: 'heart', image: 'https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=800&h=800&fit=crop' },
+  { id: 2, num: '02', name: 'Neurology', desc: 'Expert neurological care for brain, spine, and nervous system conditions.', icon: 'brain', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=800&fit=crop' },
+  { id: 3, num: '03', name: 'Orthopedics', desc: 'Advanced musculoskeletal care and joint replacement solutions.', icon: 'bone', image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=800&fit=crop' },
+  { id: 4, num: '04', name: 'Oncology', desc: 'Comprehensive cancer care with personalized treatment protocols.', icon: 'oncology', image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=800&fit=crop' },
+  { id: 5, num: '05', name: 'Pediatrics', desc: 'Specialized medical care for infants, children, and adolescents.', icon: 'child', image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800&h=800&fit=crop' },
+  { id: 6, num: '06', name: "Women's Health", desc: 'Complete women\'s healthcare from wellness to advanced gynecological care.', icon: 'women', image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&h=800&fit=crop' },
+  { id: 7, num: '07', name: 'Gastroenterology', desc: 'Expert digestive health care and advanced endoscopic procedures.', icon: 'stomach', image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=800&fit=crop' },
+  { id: 8, num: '08', name: 'Dermatology', desc: 'Advanced skin care and cosmetic dermatology treatments.', icon: 'skin', image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=800&fit=crop' },
+  { id: 9, num: '09', name: 'Emergency Medicine', desc: 'Round-the-clock emergency care with rapid response teams.', icon: 'emergency', image: 'https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=800&h=800&fit=crop' },
 ];
 
 export const doctors = [

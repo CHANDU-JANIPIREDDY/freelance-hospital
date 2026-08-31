@@ -3,21 +3,16 @@ import { useMultiReveal } from '../hooks/useScrollReveal';
 import { doctors } from '../data/siteData';
 import DoctorModal from './DoctorModal';
 
-const specialties = ['All', ...new Set(doctors.map(d => d.specialty))];
-
 export default function Doctors() {
   const [search, setSearch] = useState('');
-  const [filter, setFilter] = useState('All');
   const [selectedDoctor, setSelectedDoctor] = useState(null);
   const ref = useMultiReveal();
 
   const filtered = useMemo(() => {
     return doctors.filter(d => {
-      const matchSearch = d.name.toLowerCase().includes(search.toLowerCase()) || d.specialty.toLowerCase().includes(search.toLowerCase());
-      const matchFilter = filter === 'All' || d.specialty === filter;
-      return matchSearch && matchFilter;
+      return d.name.toLowerCase().includes(search.toLowerCase()) || d.specialty.toLowerCase().includes(search.toLowerCase());
     });
-  }, [search, filter]);
+  }, [search]);
 
   return (
     <section className="doctors" id="doctors">
@@ -34,19 +29,6 @@ export default function Doctors() {
               onChange={(e) => setSearch(e.target.value)}
               aria-label="Search doctors by name or specialty"
             />
-            <div className="doctors-filter" role="tablist" aria-label="Filter by specialty">
-              {specialties.map(s => (
-                <button
-                  key={s}
-                  className={`filter-btn ${filter === s ? 'active' : ''}`}
-                  onClick={() => setFilter(s)}
-                  role="tab"
-                  aria-selected={filter === s}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
           </div>
         </div>
         <div className="doctors-grid">
